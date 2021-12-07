@@ -1,0 +1,220 @@
+*{margin: 0; padding: 0; list-style: none;}
+*{ word-break: keep-all; }
+
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+ }
+ *{font-family: 'Pretendard-Regular';}
+
+/* 헤더----------------------------------- */
+header{
+    width: 100%;
+    /* height: 2000px;
+    background-image: url(../images/2.jpg); */
+
+    position: absolute;
+    left: 0; top: 0;
+	z-index: 10;
+    
+}
+.wrapwrap{
+    width: 100%;
+    background-color: #272343;
+    height: 70px;
+    position: fixed;
+    margin-top: -1px;
+}
+.navnav{
+    width: 1200px; margin: 0 auto;
+}
+/* 왼쪽------------------------------ */
+.navnav .leftleft{
+    width: 350px;
+    float: left;
+
+}
+/* 왼쪽로고------------------------- */
+.navnav .leftleft .logologo{
+    width: 50px;
+
+    padding: 6px;
+    float: left;
+}
+.navnav > .leftleft > .logologo > a > img{
+    max-width: 100%;
+    height: auto
+}
+/* 왼쪽메뉴---------------------- */
+
+.catecate{
+
+    float: left;
+    
+    width: 280px;
+    height: 70px;
+
+
+    line-height: 70px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.catecate > ul > li{
+    float: left;
+    width: 90px;
+    position: relative;
+    
+}
+.catecate > ul > li > a{
+    color: #fffffe;
+    text-decoration: none;
+}
+
+.catecate > ul > li > ul{
+    width: 200px;
+    display: none;
+    position: absolute;
+    background-color: #272343;
+}
+.catecate > ul > li > ul > li a{
+    color: #fffffe;
+    text-decoration: none;
+}
+
+
+.catecate > ul > li:hover > a{
+    color: #ffd803;
+    font-weight: bold;
+}
+
+.catecate > ul > li:hover > ul {
+    display:block;
+}
+
+.catecate > ul > li > ul > li:hover {
+    background: #ffd803;
+    transition: ease 0.3s;
+}
+.catecate > ul > li > ul > li:hover a{
+    color: #272343;
+    font-weight: bold;
+}
+
+/* 오른쪽--------------------------------- */
+
+.rightright{
+    
+    float: right;
+    
+    width: 450px;
+    height: 70px;
+
+    line-height: 70px;
+    margin: 0 auto;
+    text-align: center;
+}
+.rightright > ul > li{
+    float: right;
+    width: 90px;
+    position: relative;
+    
+}
+
+.rightright > ul > li > a{
+    color: #fffffe;
+    text-decoration: none;
+    
+}
+/* account hover----------------- */
+.rightright > ul > li > ul{
+    width: 90px;
+    display: none;
+    position: absolute;
+    background-color: #bae8e8;
+    
+    margin-top: -9px;
+}
+.rightright > ul > li > ul > li{
+    height: 40px;
+    line-height: 40px;
+}
+
+.rightright > ul > li > ul > li a{
+    color: #272343;
+    text-decoration: none;
+
+}
+.rightright > ul > li:hover > a{
+    color: #ffd803;
+    font-weight: bold;
+}
+
+.rightright > ul > li:hover > ul {
+    display:block;
+}
+
+.rightright > ul > li > ul > li:hover {
+    
+    background: #272343;
+    /* transition: ease 0.3s; */
+}
+.rightright > ul > li > ul > li:hover a{
+    color: #bae8e8;
+    font-weight: bold;
+}
+
+
+
+
+
+
+.rightright > ul > li > a:hover{
+    color: #ffd803;
+    /*
+    회원가입 또는 로그인 부분이라 명확한 포커스를 위해 a태그에 호버줌
+    카테고리는 자주 찾을 가능성이 있기에 li 에 호버를 줌
+    */
+}
+  #accountaccount{
+    line-height: 70px;
+    font-size: 30px !important;
+}
+
+/* 검색박스------------------------------------ */
+
+
+.search_menumenu {
+    float: right;
+    line-height: 70px;
+  }
+  
+  .search_menumenu input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+
+  .search_menumenu button {
+    float: right;
+    padding: 6px 10px;
+    margin-top: 18px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  
+  .search_menumenu button:hover {
+    background: #ccc;
+  }
+
+
+
